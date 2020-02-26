@@ -7,10 +7,10 @@ import Dropdown from "react-bootstrap/Dropdown";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
 
-const NavigationComponent = props => {
+const Navbar = props => {
   const dynamicLink = (route, linkText) => {
     return (
-      <div className="nav-link-wrapper">
+      <div className="left-side">
         <NavLink to={route} activeClassName={"nav-link-active"}>
           {linkText}
         </NavLink>
@@ -31,11 +31,9 @@ const NavigationComponent = props => {
           About
         </NavLink>
       </div>
-      <div className="left-side">
-        <NavLink exact to="/dashboard" activeClassName="nav-link-active">
-          Dashboard
-        </NavLink>
-      </div>
+      {props.loggedInStatus === true
+        ? dynamicLink("/dashboard", "Dashboard")
+        : null}
       <div className="left-side">
         <Dropdown as={ButtonGroup}>
           <Button variant="blog">
@@ -78,4 +76,4 @@ const NavigationComponent = props => {
   );
 };
 
-export default withRouter(NavigationComponent);
+export default withRouter(Navbar);

@@ -1,14 +1,19 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import NavigationComponent from "./navigation/navbar";
+import Navbar from "./navigation/navbar";
+import Home from "./pages/home";
+import Dashboard from "./pages/dashboard";
+import About from "./pages/about";
+import Login from "./pages/login";
+import Blog from "./pages/blog";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      loggedInStatus: false
+      loggedInStatus: true
     };
   }
 
@@ -17,8 +22,16 @@ export default class App extends Component {
       <Router>
         <div className="app" id="app">
           <div className="navbar">
-            <NavigationComponent loggedInStatus={this.state.loggedInStatus} />
+            <Navbar loggedInStatus={this.state.loggedInStatus} />
           </div>
+
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/about" component={About} />
+            <Route path="/login" component={Login} />
+            <Route path="/blog" component={Blog} />
+          </Switch>
         </div>
       </Router>
     );
