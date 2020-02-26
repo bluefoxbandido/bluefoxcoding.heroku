@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 .nav-wrapper {
@@ -22,7 +21,6 @@
 
     .right-side {
         grid-column: 2;
-        
+        width: 100%;        
     }
-
 }

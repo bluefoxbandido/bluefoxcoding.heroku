@@ -11,7 +11,7 @@ export default class Home extends Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         fetch('https://cors-anywhere.herokuapp.com/capstone-portfolio-backend.herokuapp.com/projects/all')
             .then(res => res.json())
             .then(projects => {

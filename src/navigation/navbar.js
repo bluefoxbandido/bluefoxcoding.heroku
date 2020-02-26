@@ -46,17 +46,17 @@ const Navbar = props => {
 
           <Dropdown.Menu>
             <Dropdown.Item>
-              <NavLink to="/languages" activeClassName="nav-link-active">
+              <NavLink to="/languages">
                 Languages
               </NavLink>
             </Dropdown.Item>
             <Dropdown.Item>
-              <NavLink to="/frameworks" activeClassName="nav-link-active">
+              <NavLink to="/frameworks">
                 Frameworks
               </NavLink>
             </Dropdown.Item>
             <Dropdown.Item>
-              <NavLink to="/libraries" activeClassName="nav-link-active">
+              <NavLink to="/libraries">
                 Libraries
               </NavLink>
             </Dropdown.Item>
@@ -64,13 +64,9 @@ const Navbar = props => {
         </Dropdown>
       </div>
       <div className="right-side">
-        {props.loggedInStatus === true ? (
-          <a onClick="#">Log Out</a>
-        ) : (
-          <NavLink exact to="/login">
-            Login
-          </NavLink>
-        )}
+        {props.loggedInStatus === true
+          ? dynamicLink("/logout", "Log Out")
+          : dynamicLink("/login", "Login")}
       </div>
     </div>
   );
