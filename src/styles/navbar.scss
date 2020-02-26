@@ -1,26 +1,54 @@
 .navbar {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    position: fixed;
     justify-content: center;
     align-items: center;
+    height: 8vh;
 }
 
 .nav-wrapper {
     display: flex;
+    flex-direction: row;
     padding: 1%;
     align-items: center;
     width: 100vw;
 
+    .nav-links {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
     .left-side {
         display: flex;
-        justify-content: space-evenly;
+        width: 100%;
         flex-direction: row;
-        grid-column: 1;
+        justify-content: left;
+        align-items: center;
         padding: 1.5%;
+        padding-top: 0;
+        
+        .nav-link {
+            color: black;
+        }
     }
 
     .right-side {
-        grid-column: 2;
-        width: 100%;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1.5%; 
+        padding-top: 0;
+
+        .nav-link {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            width: 100%;
+            color: black;
+        }
     }
 }

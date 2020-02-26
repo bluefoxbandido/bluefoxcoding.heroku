@@ -10,7 +10,6 @@ import Logout from "./pages/logout";
 import Blog from "./pages/blog";
 import AuthHelperMethods from "./auth/auth.helper.methods";
 
-
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -18,18 +17,17 @@ export default class App extends Component {
     this.state = {
       loggedInStatus: false
     };
-  };
-
-  componentDidMount() {
-      const auth = new AuthHelperMethods();
-      const token = auth.getToken()
-      if (token !== null) {
-          this.setState({
-              loggedInStatus: true
-          })
-      }
   }
 
+  componentDidMount() {
+    const auth = new AuthHelperMethods();
+    const token = auth.getToken();
+    if (token !== null) {
+      this.setState({
+        loggedInStatus: true
+      });
+    }
+  }
 
   render() {
     return (
@@ -38,15 +36,16 @@ export default class App extends Component {
           <div className="navbar">
             <Navbar loggedInStatus={this.state.loggedInStatus} />
           </div>
-
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/dashboard" component={Dashboard} />
-            <Route path="/about" component={About} />
-            <Route path="/login" component={Login} loggedIn={this.loggedIn} />
-            <Route path="/logout" component={Logout}/>
-            <Route path="/blog" component={Blog} />
-          </Switch>
+          <div className="body-component">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/dashboard" component={Dashboard} />
+              <Route path="/about" component={About} />
+              <Route path="/login" component={Login} loggedIn={this.loggedIn} />
+              <Route path="/logout" component={Logout} />
+              <Route path="/blog" component={Blog} />
+            </Switch>
+          </div>
         </div>
       </Router>
     );
