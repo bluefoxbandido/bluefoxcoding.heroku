@@ -8,6 +8,7 @@ import About from "./pages/about";
 import Login from "./pages/login";
 import Logout from "./pages/logout";
 import Blog from "./pages/blog";
+import Footer from "./navigation/footer";
 import AuthHelperMethods from "./auth/auth.helper.methods";
 
 export default class App extends Component {
@@ -45,8 +46,12 @@ export default class App extends Component {
               <Route path="/blog" component={Blog} />
             </Switch>
           </div>
+
+          <Footer className="footer" />
         </div>
       </Router>
     );
-  }
+    }
 }
+
+

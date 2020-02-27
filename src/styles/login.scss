@@ -19,7 +19,7 @@
     align-items: center;
     width: 60%;
     height: 80%;
-    background-color:rgba(52, 68, 64, .9);
+    background-color:#1F2225;
     border-radius: .2em;
 
     .box-header {
@@ -35,6 +35,12 @@
         align-items: center;
         margin-bottom: 2%;
         height: 100%;
+
+        input {
+            background-color: #343A40;
+            border-color: #1F2225;
+            color: white;
+        }
 
         button {
             margin-top: 6%;

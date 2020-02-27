@@ -1,3 +1,11 @@
+.nav-links {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #1F2225;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -11,16 +19,7 @@
 }
 
 
-    .nav-link-active {
-        text-decoration: underline;
-    }
 
-    .nav-links {
-        display: flex;
-        align-items: center;
-        width: 100vw;
-        height: 10vh;
-    }
     .left-side {
         display: flex;
         width: 100%;
@@ -28,14 +27,14 @@
         justify-content: left;
         align-items: center;
         padding: 1.5%;
-        padding-top: 0;
+        background-color: rgba(0,0,0,0);
 
         .dropdown-toggle {
             color: orange;
         }
 
         .dropdown-menu {
-            background-color: #414141;
+            background-color: #1F2225;
             text-align: center;
             color: blue;
 
@@ -52,23 +51,27 @@
     .right-side {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: right;
         width: 100%;
-        padding: 1.5%; 
-        padding-top: 0;
+        height: 100%;
+        padding: 1.5%;
+        background-color: rgba(0,0,0,0);
 
         .nav-link {
             display: flex;
             align-self: center;
-            justify-content: center;
-            width: 100%;
+            justify-content: right;
+            width: 60%;
             color: lightgray;
+        }
+
+        .navbar-brand {
+            width: 50%;
+            height: 70%;
         }
 
         .nav-link-active {
             color: red;
         }
-        
-
 
     }
