@@ -15,6 +15,10 @@
     align-items: center;
     width: 100vw;
 
+    .nav-link-active {
+        text-decoration: underline;
+    }
+
     .nav-links {
         display: flex;
         align-items: center;
@@ -29,9 +33,23 @@
         align-items: center;
         padding: 1.5%;
         padding-top: 0;
+
+        .dropdown-toggle {
+            color: orange;
+        }
+
+        .dropdown-menu {
+            background-color: #414141;
+            text-align: center;
+            color: blue;
+
+            .nav-link {
+                color: blue;
+            }
+        }
         
         .nav-link {
-            color: black;
+            color: lightgray;
         }
     }
 
@@ -48,7 +66,10 @@
             align-self: center;
             justify-content: center;
             width: 100%;
-            color: black;
+            color: lightgray;
+            
         }
+
+
     }
 }

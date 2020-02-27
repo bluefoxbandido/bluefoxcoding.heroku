@@ -56,7 +56,7 @@ const Navbar = props => {
 
             <Dropdown.Toggle split variant="blog" id="dropdown-split-basic" />
 
-            <Dropdown.Menu>
+            <Dropdown.Menu className="dropdown-menu">
               <Dropdown.Item>
                 <NavLink to="/languages" className="nav-link">
                   Languages

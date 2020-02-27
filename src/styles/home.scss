@@ -20,7 +20,7 @@
         justify-content: center;
 
         .project-item {
-            box-shadow: 2% 2% 2% 2% rgba(255, 255, 255, .75);
+            box-shadow:  rgba(255, 255, 255, .75);
             display: flex;
             justify-content: center;
             text-align: center;
@@ -31,7 +31,7 @@
                 margin: 2%;
                 padding: 2%;
                 background-color: #414141;
-                color: cornflowerblue;
+                color: blue;
             }
         }
     }

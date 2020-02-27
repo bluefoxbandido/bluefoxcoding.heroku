@@ -25,7 +25,7 @@ export default class Home extends Component {
         return (
             <div className='home'>
                 <div className='banner'>
-                    Banner
+                    <h1 style={{color: "white"}}>Banner</h1>
                 </div>
                 <div className='projects'>
                     <ProjectList data={this.state.projects}/>

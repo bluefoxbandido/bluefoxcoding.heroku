@@ -49,30 +49,32 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="main-wrapper">
-        <div className="box">
-          <div className="box-header">
-            <h1>Login</h1>
+      <div className="login">
+        <div className="main-wrapper">
+          <div className="box">
+            <div className="box-header">
+              <h1>Login</h1>
+            </div>
+            <form className="box-form">
+              <input
+                className="form-item"
+                placeholder="Email"
+                name="email"
+                type="text"
+                onChange={this.handleChange}
+              />
+              <input
+                className="form-item"
+                placeholder="Password"
+                name="password"
+                type="password"
+                onChange={this.handleChange}
+              />
+              <button className="form-submit" onClick={this.handleFormSubmit}>
+                Login
+              </button>
+            </form>
           </div>
-          <form className="box-form">
-            <input
-              className="form-item"
-              placeholder="email"
-              name="email"
-              type="text"
-              onChange={this.handleChange}
-            />
-            <input
-              className="form-item"
-              placeholder="Password"
-              name="password"
-              type="password"
-              onChange={this.handleChange}
-            />
-            <button className="form-submit" onClick={this.handleFormSubmit}>
-              Login
-            </button>
-          </form>
         </div>
       </div>
     );
