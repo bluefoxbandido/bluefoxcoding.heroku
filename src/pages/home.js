@@ -25,7 +25,25 @@ export default class Home extends Component {
         return (
             <div className='home'>
                 <div className='banner'>
-                    <h1 style={{color: "white"}}>Banner</h1>
+                    <h1>
+                        <span className="const">
+                            const
+                        </span>
+                        <span className="bluefox">
+                            bluefox
+                        </span>
+                        <span className="coding">
+                            coding
+                        </span>
+
+                        <span className="arrow">
+                            =>
+                        </span>
+                        
+                        <span className="parens">
+                            (<span className="dev">dev</span>)
+                        </span>
+                    </h1>
                 </div>
                 <div className='projects'>
                     <ProjectList data={this.state.projects}/>

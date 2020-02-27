@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Navbar from "./navigation/navbar";
+import Nav from "./navigation/navbar";
 import Home from "./pages/home";
 import Dashboard from "./pages/dashboard";
 import About from "./pages/about";
@@ -33,9 +33,8 @@ export default class App extends Component {
     return (
       <Router>
         <div className="app" id="app">
-          <div className="navbar">
-            <Navbar loggedInStatus={this.state.loggedInStatus} />
-          </div>
+          <Nav loggedInStatus={this.state.loggedInStatus} />
+
           <div className="body-component">
             <Switch>
               <Route exact path="/" component={Home} />

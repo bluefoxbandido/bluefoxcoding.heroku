@@ -6,8 +6,9 @@ import { NavLink } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
+import Navbar from "react-bootstrap/Navbar";
 
-const Navbar = props => {
+const Nav = props => {
   const dynamicLink = (route, linkText) => {
     return (
       <NavLink
@@ -21,8 +22,7 @@ const Navbar = props => {
   };
 
   return (
-    <div className="nav-wrapper">
-      <div className="nav-links">
+      <Navbar bg="dark" expand="lg" className="nav-links">
         <div className="left-side">
           <NavLink
             exact
@@ -81,9 +81,8 @@ const Navbar = props => {
             ? dynamicLink("/logout", "Log Out")
             : dynamicLink("/login", "Login")}
         </div>
-      </div>
-    </div>
+      </Navbar>
   );
 };
 
-export default withRouter(Navbar);
+export default withRouter(Nav);
