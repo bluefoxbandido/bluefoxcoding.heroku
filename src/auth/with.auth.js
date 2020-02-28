@@ -19,14 +19,9 @@ const withAuth = AuthComponent => {
     }
 
     render() {
-      return this.state.loaded === true && this.state.confirm ? (
-        <AuthComponent
-          history={this.props.history}
-          confirm={this.state.confirm}
-        />
-      ) : null;
+      return <AuthComponent />
     }
-  }; //End Return
+  }; 
 };
 
 export default withAuth;

@@ -21,6 +21,7 @@
     height: 80%;
     background-color:#1F2225;
     border-radius: .2em;
+    border: .05rem solid rgba(250, 250, 250, .2);
 
     .box-header {
         margin-top: 3%;
@@ -38,15 +39,17 @@
 
         input {
             background-color: #343A40;
-            border-color: #1F2225;
+            border: .05rem solid rgba(250, 250, 250, .2);
             color: white;
         }
 
         button {
             margin-top: 6%;
             background-color: red;
-            border-color: red;
-            color: white;
+            border: .05rem solid rgba(250, 250, 250, .2);
+            color:  rgba(250, 250, 250, .9);
+            text-size-adjust: 3rem;
+
         }
     }
 }
