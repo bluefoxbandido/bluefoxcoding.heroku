@@ -1,0 +1,35 @@
+.about-body {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+
+    .avatar {
+        text-align: center;
+
+        span {
+            font-size: 10rem;
+        }
+    }
+
+    .text-body {
+        background-color: rgba(160, 160, 160, .2);
+        padding: 50px;
+        padding-top: 25px;
+
+        p {
+            color: white;
+        }
+    }
+}
+
+.about-header {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 2vh;
+
+    h1 {
+        border-bottom: 2px solid gray;
+        color: orange;
+    }
+}
+
