@@ -19,6 +19,39 @@
             color: white;
         }
     }
+
+    .social-links {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+        list-style-type: none;
+        color: lightgray;
+
+        li {
+            border: 1px solid lightgray;
+        }
+
+        .github {
+            background-color: green;
+        }
+
+        .linkedIn {
+            background-color: red;
+        }
+
+        .email {
+            background-color: orange;
+        }
+
+        button {
+            border: none;
+        }
+    }
+
+    .quote {
+        padding: 15%;
+        color: lightgray;
+    }
 }
 
 .about-header {

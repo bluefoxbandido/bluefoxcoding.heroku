@@ -45,9 +45,15 @@ const About = () => {
         </div>
         <div className="sidebar">
           <ul className="social-links">
-            <li className="github">Github</li>
-            <li className="linkedIn">LinkedIn</li>
-            <li className="email">Email</li>
+            <li className="github">
+                <button className="github">Github</button>
+            </li>
+            <li className="linkedIn">
+                <button className="linkedIn">LinkedIn</button>
+            </li>
+            <li className="email">
+                <button className="email">Email</button>
+            </li>
           </ul>
           <p className="quote">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
