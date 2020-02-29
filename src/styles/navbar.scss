@@ -1,29 +1,10 @@
-.nav-links {
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 10vh;
-    background-color: #1F2225;
-}
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    width: 100vw;
-    position: top;
-    justify-content: center;
-    align-items: center;
-    height: 8vh;
-    margin-left: none;
-    border-bottom: .05rem solid rgba(250, 250, 250, .2);
-}
 
 
 
     .left-side {
         display: flex;
-        width: 100%;
+        width: 50%;
         flex-direction: row;
         justify-content: left;
         align-items: center;
@@ -32,12 +13,22 @@
 
         .dropdown-toggle {
             color: orange;
+            
+            &:hover {
+                background-color: lightgray;
+            }
         }
 
         .dropdown-menu {
             background-color: #1F2225;
             text-align: center;
             color: blue;
+
+            .dropdown-item {
+                &:hover {
+                    background-color: lightgray;
+                }
+            }
 
             .nav-link {
                 color: blue;
@@ -46,6 +37,18 @@
         
         .nav-link {
             color: blue;
+
+            &:hover {
+                background-color: lightgray;
+            }
+        }
+
+        .nav-link-active {
+            color: lightgray;
+
+            &:hover {
+                color: blue;
+            }
         }
     }
 
@@ -53,7 +56,7 @@
         display: flex;
         align-items: center;
         justify-content: right;
-        width: 100%;
+        width: 25%;
         height: 100%;
         padding: 1.5%;
         background-color: rgba(0,0,0,0);
@@ -61,9 +64,14 @@
         .nav-link {
             display: flex;
             align-self: center;
-            justify-content: right;
-            width: 60%;
+            text-align: center;
+            justify-content: center;
+            width: 50%;
             color: lightgray;
+
+            &:hover {
+                background-color: blue;
+            }
         }
 
         .navbar-brand {
