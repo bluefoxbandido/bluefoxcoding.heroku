@@ -1,0 +1,25 @@
+.blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+    h1 {
+        color: red;
+    }
+    h2 {
+        color: lightgray;
+    }
+    h3 {
+        color: blue;
+    }
+
+    code {
+        color: orange;
+    }
+
+    div, p {
+        color: gray;
+    }
+}

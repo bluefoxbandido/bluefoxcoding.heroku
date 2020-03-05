@@ -38,8 +38,8 @@ export default class ProjectForm extends Component {
                 url: url || "",
                 imageUrl: imageUrl || "",
                 editMode: true,
-                apUrl: `https://capstone-portfolio-backend.herokuapp.com/projects/${_id}`,
-                apiAction: "put"
+                apUrl: `https://cors-anywhere.herokuapp.com/https://capstone-portfolio-backend.herokuapp.com/projects/${_id}`,
+                apiAction: "patch"
             });
         }
     }

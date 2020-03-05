@@ -1,7 +1,10 @@
+.blog-button {
+    color: blue;
 
-
-
-
+    &:hover {
+        background-color: lightgray;
+    }
+}
     .left-side {
         display: flex;
         width: 50%;

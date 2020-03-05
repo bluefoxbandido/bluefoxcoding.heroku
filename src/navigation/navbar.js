@@ -44,14 +44,8 @@ const Nav = props => {
           ? dynamicLink("/dashboard", "Dashboard")
           : null}
         <Dropdown as={ButtonGroup}>
-          <Button variant="blog">
-            <NavLink
-              to="/blog"
-              className="nav-link"
-              activeClassName="nav-link-active"
-            >
-              Blog
-            </NavLink>
+          <Button variant="blog" className="blog-button">
+            Blog
           </Button>
 
           <Dropdown.Toggle split variant="blog" id="dropdown-split-basic" />

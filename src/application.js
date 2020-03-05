@@ -43,7 +43,7 @@ export default class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/login" component={Login} loggedIn={this.loggedIn} />
               <Route path="/logout" component={Logout} />
-              <Route path="/blog" component={Blog} />
+              <Route path="/blog/:slug" component={Blog} />
             </Switch>
           </div>
 
